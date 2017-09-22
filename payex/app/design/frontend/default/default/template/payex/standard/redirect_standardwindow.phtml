@@ -1,0 +1,39 @@
+<?php
+//
+// Load the payex online object
+//
+$standard = Mage::getModel('payex/standard');
+
+//
+// Initialize the payment
+//
+$redirectUrl = $standard->initalize();
+
+?>
+
+<script type="text/javascript">
+<!-- 
+	function redirect_to_PayEx()
+	{
+		var popup = "<?php echo $standard->getConfigData('popup'); ?>";
+		var url = "<?php echo $redirectUrl; ?>";
+		if (popup > 1) {
+			if (url.length > 0) {
+				var payexwin = window.open(url,"PayEx_window","menubar=0,resizable=1,scrollbars=1,status=1,titlebar=1,toolbar=0,left=100,top=50");
+			}
+		}
+		else {
+			var payexwin = window.location = url;
+		}
+	}
+	redirect_to_PayEx();
+-->
+</script>
+
+<h1><?php echo $this->__('PAYEX_LABEL_1') ?></h1>
+<?php echo $this->__('PAYEX_LABEL_3') ?>
+<br /><br />
+<input type="button" value="<?php echo $this->__('PAYEX_LABEL_4') ?>" onClick="redirect_to_PayEx()">
+<br /><br />
+<p style="text-align:center"><img src="<?php echo $this->getSkinUrl('images/payex/payex_logo.gif'); ?>" border="0" /></p>
+</ul>

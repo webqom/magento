@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<config>
+   <sections>
+        <payment>
+            <groups>
+                <payex_standard translate="label" module="payex">
+                    <label><![CDATA[PayEx | Your Online Payment System]]></label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label><![CDATA[<b>Enabled:</b>]]></label>
+                            <comment><![CDATA[To enable and disable this payment method.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                        <title translate="label">
+                            <label><![CDATA[<b>Enabled:</b>]]></label>
+                            <comment><![CDATA[The title of the payment method displayed to the customers.]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </title>
+						<merchantnumber translate="label">
+                            <label><![CDATA[Enter PayEx Merchant Number (Account number)]]></label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </merchantnumber>
+						<payexurl translate="label">
+                            <label><![CDATA[PayEx Online Url. Here you can insert your test url. Remember to change the url here to the live one when testing is finished. This is provided by PayEx.]]></label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </payexurl>
+						<md5key translate="label">
+                            <label><![CDATA[Enter the encryption key for your PayEx Payment Gateway]]></label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </md5key>
+                        <order_status translate="label">
+                            <label><![CDATA[Order Status before payment]]></label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_order_status</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </order_status>
+                        <order_status_after_payment translate="label">
+                            <label><![CDATA[Order Status after payment]]></label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_order_status</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </order_status_after_payment>
+                         <sort_order translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
+						 
+                        <instantcapture translate="label">
+                            <label><![CDATA[Instant capture. Capture payments immediately. This must be disabled if products cannot be delivered instantly, e.g. packing and shipping.]]></label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </instantcapture>
+                        <popup translate="label">
+                            <label><![CDATA[Popup Window. When enabled, PayEx Online Payment will open in a popup window. The user will be redirected to PayEx Online Payment when this is disabled.]]></label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>payex/system_config_source_popup</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>2</show_in_default>
+                            <show_in_website>2</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </popup>
+                        
+                    </fields>
+                </payex_standard>
+            </groups>
+        </payment>
+    </sections>
+</config>

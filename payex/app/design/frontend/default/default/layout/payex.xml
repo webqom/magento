@@ -1,0 +1,10 @@
+<?xml version="1.0" ?> 
+<layout version="0.1.0">
+		<payex_standard_redirect>
+		<reference name="root">
+			<action method="setTemplate">
+				<template>page/3columns.phtml</template> 
+			</action>
+		</reference>
+	</payex_standard_redirect>
+</layout>
