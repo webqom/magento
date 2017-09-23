@@ -51,4 +51,4 @@ To find these, follow these steps:
 
 While still in the “PayEx | Your Online Payment System” area of System > Configuration, change the “Enabled” dropdown (first setting) to “Yes“.
 
-Please contact at ravisinghengg@gmail.com for any suggestions/query. I'll try to get back to you as soon as i can.
+Please contact at ravindra85@gmail.com for any suggestions/query. I'll try to get back to you as soon as i can.
